@@ -1,0 +1,385 @@
+.list{
+    position: absolute;
+    width: 100%;
+}
+.list li{
+    width: 100%;
+    height: 4rem;
+    display: block;
+    border-bottom: 1px solid #ccc;
+    margin: 5%;
+    position: relative;
+}
+.taptap-myGame {
+    margin: 0 auto;
+}
+
+.switch-btn {
+    position: relative;
+    display: block;
+    vertical-align: top;
+    width: 2.1rem;
+    height: 1rem;
+    border-radius: 18px;
+    cursor: pointer;
+}
+
+.switch-btn>span {
+    box-sizing: border-box;
+}
+
+.toggle-btn {
+    background: linear-gradient(#eee, #fafafa);
+    border-radius: 100%;
+    height: 1rem;
+    left: 1px;
+    position: absolute;
+    top: 1px;
+    width: .9rem;
+}
+
+.toggle-btn::before {
+    color: #14B9C8;
+    display: inline-block;
+    font-size: .9rem;
+    letter-spacing: -2px;
+    vertical-align: middle;
+}
+
+.text-btn {
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: inherit;
+    color: #fff;
+    display: block;
+    font-size: .9rem;
+    height: inherit;
+    position: relative;
+    text-transform: uppercase;
+}
+.text-btn::after,.text-btn::before{
+    position: absolute; 
+  top: 50%; 
+  margin-top: -.5em; 
+  line-height: 1;  
+  transition: inherit;
+}
+.text-btn::before {
+    right: .8rem; 
+}
+
+.text-btn::after {
+    left: .8rem;
+    color: #ccc;
+    opacity: 0;
+}
+
+.game-total {
+    width: 100%;
+    position: absolute;
+    top: 6rem;
+    border-bottom: 1px solid #ccc;
+    height: 2rem;
+}
+.game-total>div:first-of-type{
+    float: left;
+    width: 50%;
+    padding-left: 5%;
+    font-size: .8rem;
+    line-height: 2;
+}
+.game-total>div:last-of-type{
+    float: right;
+    padding-right: 5%;
+}
+.check-switch {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+.check-switch:checked ~.text-btn{
+    background-color: #14B9C8;
+    border: 1px solid #14B9C8;
+}
+.check-switch:checked ~ .text-btn::before{
+    opacity: 0;
+}
+.check-switch:checked ~ .text-btn::after{
+    opacity: 1;
+}
+.check-switch:checked ~ .toggle-btn{
+    left: 1.3rem;
+    color: #fff;
+}
+.text-btn,.toggle-btn{
+    transition:  all 0.5 ease;
+}
+.wall-gengxin{
+    font-size: .6rem;
+    font-weight: 500;
+    color: #000;
+}
+.wall-gengxin-2{
+    width: 60%;
+    font-size: .8rem;
+    font-weight: bold;
+    margin-bottom: 3%;
+}
+.wall-all{
+    font-size: .5rem;
+color: #14B9C8;
+float: right;
+line-height: 1.5rem;
+}
+.text-p{
+    font-size: .5rem;
+    font-weight: normal;
+}
+.wall-all-2{
+    width: 40%;
+    font-size: .8rem;
+    border-left: 1px solid #ccc;
+    margin-bottom: 3%;
+}
+.gengxin{
+    width: 100%;
+    position: absolute;
+    top: 8rem;
+    border-bottom: 1px solid #ccc;
+    height: 4rem;
+}
+.gengxin-app{
+    width: 90%;
+    position: absolute;
+    top: 6rem;
+    margin: 5%;
+    height: 2rem;
+    display: flex;
+    border-bottom: 1px solid #ccc;
+}
+.gengxin>div{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.gengxin-img{
+    width: 1.8rem;
+    height: 1.8rem;
+}
+.gengxin-img img{
+    width: 100%;
+    height: 100%;
+}
+.has-game{
+    width: 100%;
+    position: absolute;
+    top: 12rem;
+}
+.left-games{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    float: left;
+}
+.has-game-play{
+    width: 60%;
+    padding-left: .5rem;
+    position: relative;
+}
+.has-game-play h6{
+    color: #000;
+}
+.has-game-play span{
+    width: 100%;
+    display: block;
+    color: #555;
+    font-size: .55rem;
+    position: absolute;
+    top: .8rem;
+}
+.right-games{
+    width: 40%;
+    height: 100%;
+    display: block;
+    float: left;
+    position: relative;
+}
+.right-games>button{
+    width: 2.8rem;
+    height: 1.2rem;
+    background-color: #14B9C8;
+    color: #fff;
+    border: 1px solid #14B9C8;
+    border-radius: 5px;
+    font-size: .55rem;
+    position: absolute;
+    top: 1.4rem;
+}
+.right-games>button:nth-of-type(2){
+    right: 1.1rem;
+}
+.has-game-img{
+    width: 2.8rem;
+    height: 2.8rem;
+}
+.has-game-img img{
+    width: 100%;
+    height: 100%;
+}
+.arrow-move{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.had-games-list{
+    position: absolute;
+    top: 6rem;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.rangelist li{
+    width: 100%;
+    height: 4rem;
+    display: block;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+}
+.had-games-list li{
+    width: 100%;
+    height: 4rem;
+    display: block;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+}
+.range-app{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    float: left;
+}
+.range-app>a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.range-game-img{
+    width: 25%;
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+.range-game-img img{
+    width: 100%;
+    height: 100%;
+}
+.range-games{
+    width: 30%;
+    height: 100%;
+    display: block;
+    float: left;
+}
+.range-game-play{
+    width: 55%;
+    margin-left: 5%;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    position: relative;
+}
+.range-game-play>div:nth-of-type(2) p:nth-last-of-type(2){
+    padding-left: 5%;
+    line-height: 1.3;
+}
+.range-game-play>div:nth-of-type(2) p:last-of-type{
+    display: block;
+    color: #555;
+    font-size: .5rem;
+    padding-left: 8%;
+    line-height: 1.3;
+}
+.range-game-play>div:last-of-type{
+    width: 100%;
+    position: absolute;
+    top: 1.9rem;
+}
+.range-game-play>div:last-of-type>button{
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #e8e8e8;
+    font-size: .5rem;
+    color: #555;
+}
+.range-game-play>div:first-of-type{
+    font-size: .8rem;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 1rem;
+    color: #000;
+    line-height: 1;
+}
+.range-game-play>div:nth-of-type(2){
+    display: flex;
+    font-size: .6rem;
+    position: absolute;
+    top: .8rem;
+    width: 100%;
+    height: 1rem;
+    color:#14B9C8;
+}
+.range-games-button{
+    width: 2.8rem;
+    height: 1.2rem;
+    background-color: #14B9C8;
+    color: #fff;
+    border: 1px solid #14B9C8;
+    border-radius: 5px;
+    font-size: .55rem;
+    position: absolute;
+    top:2.1rem;
+    right: 0;
+}
+.shangjia{
+    color: #14B9C8;
+    font-size: .5rem;
+    display: inline-block;
+    position: absolute;
+    right: .5rem;
+}
+.arrow-move-out{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.yiyvyue{
+    border-radius: 5px;
+    font-size: .55rem;
+    position: absolute;
+    top:2.1rem;
+    right: 0;
+    width: 2.8rem;
+    height: 1.2rem;
+    background-color: #fff;
+    border: 1px solid #aaa;
+    color: #333;
+    font-weight: bold;
+}
+.cur-gengxin{
+    font-size: .5rem;
+    color: #555;
+    display: inline-block;
+    position: absolute;
+    top: .5rem;
+    width: 40%;
+}
+.change-the-color{
+    color: #555!important;
+}
+.button-move{
+    right: 10%;
+}
+.arrow-move-in{
+    position: absolute;
+    top: .5rem;
+    left: 40%;
+}
